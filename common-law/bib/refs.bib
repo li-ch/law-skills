@@ -1,0 +1,984 @@
+
+                  Multi-{GPU} Communication},
+               ({FAST} '22)},
+               {iPipe}},
+               Aashaka Shah and {\'I}{\~n}igo Goiri and Saeed Maleki and
+               Adam Belay and Hari Balakrishnan},
+               Adam Belay},
+               Alexey Tumanov and Ramachandran Ramjee},
+               Alvin R. Lebeck and Danyang Zhuo},
+               and Christopher R{\'e} and Ion Stoica and Ce Zhang},
+               and High Performance},
+               and Hua Lu and Yinlong Xu and Guohao Dai and Yu Wang and
+               and Lianmin Zheng and Cody Hao Yu and Joseph Gonzalez and
+               and Yibo Zhu and Xuanzhe Liu and Xin Jin and Hao Zhang},
+               Andrei Voinescu and Andrew W. Moore and Gianni Antichi and
+               Anirudh Badam and Miguel Castro},
+               Architectural Support for Programming Languages and
+               Arvind Krishnamurthy and Masoud Moshref and Dan R. K. Ports and
+               Arvind Krishnamurthy and Simon Peter and Karan Gupta},
+               Asaf Cidon and Kang G. Shin},
+               availability, and performance},
+               Babak Falsafi and Boris Grot},
+               Caching},
+               Chip Elliott and Michael Zink and Emmanuel Cecchet and
+               Clusters at {Twitter}},
+               Communication},
+               Computer Systems ({SIGMETRICS} '12)},
+               Datacenters},
+               David A. Maltz and Parveen Patel and Sudipta Sengupta},
+               David Mazi{\`e}res and Michael Miller and Arun Seehra},
+               Decodes with Chunked Prefills},
+               Derek Chiou and Alireza Dabagh and Mike Andrewartha and
+               Edmund B. Nightingale and Matthew Renzelmann and Alex Shamis and
+               Eric Chung and Harish Kumar Chandrappa and Somesh Chaturmohta and
+               Experiments and Technologies ({CoNEXT} '11)},
+               for Mixed Downstream Workloads},
+               Gary Wong and Jonathon Duerig and Eric Eide and Leigh Stoller and
+               Generative Models},
+               George Varghese},
+               Goodput-Optimized Large Language Model Serving},
+               Hao Zhang and Ion Stoica},
+               Hari Angepat and Vivek Bhanu and Adrian Caulfield and
+               Implementation ({NSDI} '14)},
+               Implementation ({NSDI} '17)},
+               Implementation ({NSDI} '18)},
+               Implementation ({NSDI} '19)},
+               Implementation ({NSDI} '21)},
+               Implementation ({NSDI} '23)},
+               Implementation ({OSDI} '16)},
+               Implementation ({OSDI} '18)},
+               Implementation ({OSDI} '20)},
+               Improved Resource Management in Large Cloud Platforms},
+               International Conference on Measurement and Modeling of
+               Jacob Nelson and Panos Kalnis and Changhoon Kim and
+               Jayashree Mohan and Nipun Kwatra and Bhargav S. Gulavani and
+               Jeongkeun Lee and Nate Foster and Changhoon Kim and Ion Stoica},
+               Jianguo Li and Sheng Zhang},
+               John Ousterhout},
+               Kalin Ovtcharov and Jitu Padhye and Gautham Popuri and
+               Kuangching Wang and Glenn Ricart and Larry Landweber and
+               Kushagra Vaid and David A. Maltz and Albert Greenberg},
+               Language Models with a Single {GPU}},
+               Latency-sensitive Datacenter Workloads},
+               Lianmin Zheng and Cody Hao Yu and Joseph Gonzalez and
+               Madhan Sivakumar and Nisheeth Srivastava and Anshuman Verma and
+               Mahmoud Elhaddad and Shachar Raindel and Jitendra Padhye and
+               Marcin Wojcik},
+               Marcos K. Aguilera and Adam Belay},
+               Marcus Fontoura and Ricardo Bianchini},
+               Mark Russinovich and Marcus Fontoura and Ricardo Bianchini},
+               Matt Humphrey and Jack Lavier and Norman Lam and Fengfen Liu and
+               Miguel Castro and Orion Hodson},
+               Mike Hibler and David Johnson and Kirk Webb and Aditya Akella and
+               Milo M. K. Martin and Moray McLaren and Prashant Chandra and
+               Mosharaf Chowdhury and Kang G. Shin},
+               Network Priorities},
+               Operating Systems ({ASPLOS} '14)},
+               Operating Systems ({ASPLOS} '23)},
+               Pantea Zardoshti and Stanko Novakovic and Monish Shah and
+               Parthasarathy Ranganathan},
+               Performance Isolation},
+               Peter Richt{\'a}rik},
+               Phase Splitting},
+               Pingbo An and Kui Ji and Shideng Zhang and Bin Xu and Ruiqing Feng and
+               Principles ({SOSP} '15)},
+               Principles ({SOSP} '17)},
+               Principles ({SOSP} '23)},
+               Qasim Zuhair and Deepak Bansal and Doug Burger and
+               Ramanan Vaidyanathan and Kevin Chu and Andy Fingerhut and
+               Resource Disaggregation},
+               Ricardo Bianchini},
+               Rob Cauble and Hassan M. G. Wassel and Behnam Montazeri and
+               Samir Rajadnya and Scott Lee and Ishwar Agarwal and Mark D. Hill and
+               Shachar Raindel and Tejas Sapre and Mark Shaw and Gabriel Silva and
+               Simon L. Sabato and Joel Scherpelz and Amin Vahdat},
+               Simple and Efficient Sparsity},
+               Snigdhaswin Kar and Prabodh Mishra},
+               Song Jiang and Mike Paleczny},
+               Soojeong Kim and Byung-Gon Chun},
+               Srikanth Kandula and Changhoon Kim and Parantap Lahiri and
+               Tao Ding and Kai Chen and Chuanxiong Guo},
+               Thomas F. Wenisch and Monica Wong-Chan and Sean Clark and
+               Training in Heterogeneous {GPU/CPU} Clusters},
+               Vinh The Lam and Francis Matus and Rong Pan and Navindra Yadav and
+               Wen Yan and Liqiang He},
+               Wenxue Li and Xinchen Wan and Peng Xie and Tao Feng and Ke Cheng and
+               with {PagedAttention}},
+               with Two-Sided ({RDMA}) Datagram {RPCs}},
+               Xiongfei Geng and Tianhao Wang and Weicheng Ling and Kejia Huo and
+               Yong Cui and Chuanxiong Guo},
+               Zhuohan Li and Max Ryabinin and Beidi Chen and Percy Liang
+             Christos Kozyrakis and Ion Stoica and Joseph E. Gonzalez and
+             Chuanxiong Guo and Chuan Wu},
+             Chuyue Sun and Jeff Huang and Cody Hao Yu and Shiyi Cao and
+             Clark Barrett and Ying Sheng},
+             for {LLM} Serving},
+             Yongwei Wu and Weimin Zheng and Xinran Xu},
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    address = "Minneapolis, Minnesota",
+    author = "Devlin, Jacob  and
+    booktitle = "NAACL",
+    doi = "10.18653/v1/N19-1423",
+    month = jun,
+    pages = "4171--4186"
+    publisher = "Association for Computational Linguistics",
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    url = "https://aclanthology.org/N19-1423",
+    year = "2019",
+  address      = {Beaverton, OR, USA},
+  address={Barcelona, Spain},
+  address={Florianopolis, Brazil},
+  address={Oakland, CA, USA},
+  archivePrefix={arXiv},
+  author       = {{Databricks Engineering}},
+  author       = {{InfiniBand Trade Association (IBTA)}},
+  author       = {{Jarvislabs}},
+  author       = {{NVIDIA}},
+  author       = {Mandakolathur, Karthik and Jeaugey, Sylvain},
+  author      = {{NVIDIA Corporation}},
+  author      = {C. Perkins},
+  author      = {Nielsen, Jakob},
+  author    = {{NVIDIA}},
+  author    = {Albert Greenberg and James R. Hamilton and Navendu Jain and
+  author    = {Aleksandar Dragojevi{\'{c}} and Dushyanth Narayanan and
+  author    = {Aleksandar Dragojevi{\'{C}} and Dushyanth Narayanan and
+  author    = {Amedeo Sapio and Marco Canini and Chen-Yu Ho and
+  author    = {Amey Agrawal and Nitin Kedia and Ashish Panwar and
+  author    = {Amy Ousterhout and Joshua Fried and Jonathan Behrens and
+  author    = {Anuj Kalia and Michael Kaminsky and David G. Andersen},
+  author    = {Arjun Singhvi and Aditya Akella and Dan Gibson and
+  author    = {Behnam Montazeri and Yilong Li and Mohammad Alizadeh and
+  author    = {Berk Atikoglu and Yuehai Xu and Eitan Frachtenberg and
+  author    = {Daniel Firestone and Andrew Putnam and Sambhrama Mundkur and
+  author    = {Dmitry Duplyakin and Robert Ricci and Aleksander Maricq and
+  author    = {Eli Cortez and Anand Bonde and Alexandre Muzio and
+  author    = {Gyeong-In Yu and Joo Seong Jeong and Geon-Woo Kim and
+  author    = {Huaicheng Li and Daniel S. Berger and Lisa Hsu and Daniel Ernst and
+  author    = {Jad Naous and Michael Walfish and Antonio Nicolosi and
+  author    = {Joshua Fried and Zhenyuan Ruan and Amy Ousterhout and
+  author    = {Juncheng Gu and Youngmoon Lee and Yiwen Zhang and
+  author    = {Juncheng Yang and Yao Yue and K. V. Rashmi},
+  author    = {Ke Cheng and Zhi Wang and Wen Hu and Tiannuo Yang and
+  author    = {Luiz Andr{\'e} Barroso and Mike Marty and David Patterson and
+  author    = {Mark Handley and Costin Raiciu and Alexandru Agache and
+  author    = {Miller, Robert B.},
+  author    = {Ming Liu and Tianyi Cui and Henry Schuh and
+  author    = {Mohammad Alizadeh and Tom Edsall and Sarang Dharmapurikar and
+  author    = {Pratyush Patel and Esha Choukse and Chaojie Zhang and
+  author    = {Qingyuan Hu and Weitao Zhang and Pengxin Guo and Qinghao Hu
+  author    = {Qizhe Cai and Mina Tahmasbi Arashloo and Rachit Agarwal},
+  author    = {Shin-Yeh Tsai and Yiying Zhang},
+  author    = {Stanko Novakovic and Alexandros Daglis and Edouard Bugnion and
+  author    = {William Fedus and Barret Zoph and Noam Shazeer},
+  author    = {Woosuk Kwon and Zhuohan Li and Siyuan Zhuang and Ying Sheng
+  author    = {Woosuk Kwon and Zhuohan Li and Siyuan Zhuang and Ying Sheng and
+  author    = {Xin Jin and Xiaozhou Li and Haoyu Zhang and Robert Soul{\'e} and
+  author    = {Xinhao Kong and Jingrong Chen and Wei Bai and Yechen Xu and
+  author    = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+  author    = {Yimin Jiang and Yibo Zhu and Chang Lan and Bairen Yi and
+  author    = {Ying Sheng and Lianmin Zheng and Binhang Yuan and
+  author    = {Yinmin Zhong and Shengyu Liu and Junda Chen and Jianbo Hu
+  author    = {Yizhou Shan and Yutong Huang and Yilun Chen and Yiying Zhang},
+  author    = {Youngmoon Lee and Hasan Al Maruf and Mosharaf Chowdhury and
+  author    = {Zhenyuan Ruan and Malte Schwarzkopf and
+  author    = {Zilong Wang and Layong Luo and Qingsong Ning and Chaoliang Zeng and
+  author  = {{Qwen Team}},
+  author  = {Borui Wan and Juntao Zhao and Chenyu Jiang and
+  author  = {Hongtao Lyu and Boyue Liu and Mingyu Wu and Haibo Chen},
+  author  = {Lianmin Zheng and Liangsheng Yin and Zhiqiang Xie and
+  author  = {Ruoyu Qin and Zheming Li and Weiran He and Mingxing Zhang and
+  author = {{DeepSeek-AI}},
+  author = {{IEEE 802.1 Working Group}},
+  author={{Alibaba Cloud}},
+  author={{NVIDIA}},
+  author={{P4.org Applications Working Group}},
+  author={Al-Fares, Mohammad and Loukissas, Alexander and Vahdat, Amin},
+  author={Alizadeh, Mohammad and Edsall, Tom and Dharmapurikar, Sarang and Vaidyanathan, Ramanan and Chu, Kevin and Fingerhut, Andy and Lam, Vinh The and Matus, Francis and Pan, Rong and Yadav, Navindra and others},
+  author={Alizadeh, Mohammad and Greenberg, Albert and Maltz, David A and Padhye, Jitendra and Patel, Parveen and Prabhakar, Balaji and Sengupta, Sudipta and Sridharan, Murari},
+  author={Alizadeh, Mohammad and Greenberg, Albert and Maltz, David A. and Padhye, Jitendra and Patel, Parveen and Prabhakar, Balaji and Sengupta, Sudipta and Sridharan, Murari},
+  author={AMD. n.d. },
+  author={Bai, Wei and Chen, Kai and Wang, Hao and Chen, Li and Han, Dongsu and Tian, Chen},
+  author={Cao, J and Guan, Y and Qian, K and et al.},
+  author={Cao, Jiamin and Shi, Shangfeng and Gao, Jiaqi and Liu, Weisen and Yang, Yifan and Xu, Yichi and Zheng, Zhilong and Guan, Yu and Qian, Kun and Liu, Ying and others},
+  author={Cardwell, Neal and Cheng, Yuchung and Gunn, C Stephen and Yeganeh, Soheil Hassas and Jacobson, Van},
+  author={Chen, Li and Chen, Kai and Bai, Wei and Alizadeh, Mohammad},
+  author={Dash, A. K.},
+  author={Deng, Yangtao and Shi, Xiang and Jiang, Zhuo and Zhang, Xingjian and Zhang, Lei and Zhang, Zhang and Li, Bo and Song, Zuquan and Zhu, Hang and Liu, Gaohong and Li, Fuliang and Wang, Shuguang and Lin, Haibin and Ye, Jianxi and Yu, Minlan},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  author={Dixit, Advait and Prakash, Pawan and Hu, Y Charlie and Kompella, Ramana Rao},
+  author={Eisenman, Assaf and Matam, Kiran Kumar and Ingram, Steven and Mudigere, Dheevatsa and Krishnamoorthi, Raghuraman and Nair, Krishnakumar and Smelyanskiy, Misha and Annavaram, Murali},
+  author={Gangidi, A and Miao, R and Zheng, S and et al.},
+  author={Ghorbani, S. and Yang, Z. and Godfrey, P. B. and others},
+  author={Greenberg, Albert G. and Hamilton, James R. and Jain, Navendu and Kandula, Srikanth and Kim, Changhoon and Lahiri, Parantap and Maltz, David A. and Patel, Parveen and Sengupta, Sudipta},
+  author={Gui, Fei and Gao, Kaihui and Chen, Li and Li, Dan and Liu, Vincent and Zhang, Ran and Yang, Hongbing and Xiong, Dian},
+  author={Handley, Mark and Raiciu, Costin and Agache, Alexandru and Voinescu, Andrei and Moore, Andrew W and Antichi, Gianni and W{\'o}jcik, Marcin},
+  author={He, Keqiang and Rozner, Eric and Agarwal, Kanak and Felter, Wes and Carter, John and Akella, Aditya},
+  author={He, Tao and Li, Xue and Wang, Zhibin and Qian, Kun and Xu, Jingbo and Yu, Wenyuan and Zhou, Jingren},
+  author={Hu, Jinbin and Huang, Jiawei and Lv, Wenjun and Zhou, Yutao and Wang, Jianxin and He, Tian},
+  author={Hu, Qinghao and Ye, Zhisheng and Wang, Zerui and Wang, Guoteng and Zhang, Meng and Chen, Qiaoling and Sun, Peng and Lin, Dahua and Wang, Xiaolin and Luo, Yingwei and others},
+  author={Huang, Yanping and Cheng, Youlong and Bapna, Ankur and Firat, Orhan and Chen, Dehao and Chen, Mia and Lee, HyoukJoong and Ngiam, Jiquan and Le, Quoc V and Wu, Yonghui and et al.},
+  author={Jiang, Yimin and Zhu, Yibo and Lan, Chang and Yi, Bairen and Cui, Yong and Guo, Chuanxiong},
+  author={Jiang, Ziheng and Lin, Haibin and Zhong, Yinmin and Huang, Qi and Chen, Yangrui and Zhang, Zhi and Peng, Yanghua and Li, Xiang and Xie, Cong and Nong, Shibiao and Jia, Yulu and He, Sun and Chen, Hongmin and et al.},
+  author={Jin, Chao and Jiang, Ziheng and Bai, Zhihao and Zhong, Zheng and Liu, Juncai and Li, Xiang and Zheng, Ningxin and Wang, Xi and Xie, Cong and Huang, Qi and others},
+  author={Kandula, S and Katabi, D and Davie, B and et al.},
+  author={Kheirkhah, Morteza and Wakeman, Ian and Parisis, George},
+  author={Kim, Changhoon and Anwer, Bilal and Gupta, Anirudh and Khan, Mohammad Azar and others},
+  author={Le Scao, Teven and others},
+  author={Li, B and Wang, X and Wang, J and et al.},
+  author={Li, Baojia and Wang, Xiaoliang and Wang, Jingzhu and Liu, Yifan and Gong, Yuanyuan and Lu, Hao and Dang, Weizhen and Zhang, Weifeng and Huang, Xiaojie and Chen, Mingzhuo and Chen, Jie and He, Chunzhi and Liu, Yadong and Hu, Xiaoyuan and Liu, Chen and Ji, Xuefeng and Xia, Yinben and Li, Xiang and He, Zekun and Wang, Yachen and Zou, Xianneng},
+  author={Li, J and Jiang, Y and Zhu, Y and et al.},
+  author={Li, Mu and Andersen, David G and Park, Jun Woo and Smola, Alexander J and Ahmed, Amr and Josifovski, Vanja and Long, James and Shekita, Eugene J and Su, Bor-Yiing},
+  author={Li, Yuliang and Miao, Rui and Liu, Hongqiang Harry and Zhuang, Yan and Feng, Fei and Tang, Lingbo and Cao, Zheng and Zhang, Ming and Kelly, Frank and Alizadeh, Mohammad and others},
+  author={Liao, Heng and Liu, Bingyang and Chen, Xianping and Guo, Zhigang and Cheng, Chuanning and Wang, Jianbing and Chen, Xiangyu and Dong, Peng and Meng, Rui and Liu, Wenjie and others},
+  author={Liao, X and Sun, Y and Tian, H and et al.},
+  author={Liu, Aixin and Feng, Bei and Xue, Bing and Wang, Bingxuan and Wu, Bochao and Lu, Chengda and Zhao, Chenggang and Deng, Chengqi and Zhang, Chenyu and Ruan, Chong and others},
+  author={Liu, X and Arzani, B and Kakarla, S K R and et al.},
+  author={Meng, Qingkai and Zheng, Hao and Zhang, Zhenhui and Lao, ChonLam and Huang, Chengyuan and Li, Baojia and Zhu, Ziyuan and Lu, Hao and Dang, Weizhen and Lin, Zitong and others},
+  author={Microsoft Corporation.},
+  author={Mittal, Radhika and Lam, Vinh The and Dukkipati, Nandita and Blem, Emily and Wassel, Hassan and Ghobadi, Monia and Vahdat, Amin and Wang, Yaogong and Wetherall, David and Zats, David},
+  author={Narayanan, Deepak and Shoeybi, Mohammad and Casper, Jared and LeGresley, Patrick and Patwary, Mostofa and Korthikanti, Vijay Anand and Vainbrand, Dmitri and Kashinkunti, Prethvi and Bernauer, Julie and Catanzaro, Bryan and Phanishayee, Amar and Zaharia, Matei},
+  author={Neugebauer, Rolf and Antichi, Gianni and Zazo, Jos{\'e} Fernando and Audzevich, Yury and L{\'o}pez-Buedo, Sergio and Moore, Andrew W},
+  author={NVIDIA Corporation.},
+  author={NVIDIA},
+  author={Patarasuk, Pitch and Yuan, Xin},
+  author={Qian, Kun and Xi, Yongqing and Cao, Jiamin and Gao, Jiaqi and Xu, Yichi and Guan, Yu and Fu, Binzhang and Shi, Xuemei and Zhu, Fangbo and Miao, Rui and et al.},
+  author={Raiciu, Costin and Barre, Sebastien and Pluntke, Christopher and Greenhalgh, Adam and Wischik, Damon and Handley, Mark},
+  author={Rajasekaran, S and Ghobadi, M and Akella, A},
+  author={Ren, Z and Li, Y and Wang, Z and et al.},
+  author={Shah, Aashaka and Chidambaram, Vijay and Cowan, Meghan and Maleki, Saeed and Musuvathi, Madan and Mytkowicz, Todd and Nelson, Jacob and Saarikivi, Olli and Singh, Rachee},
+  author={Shah, Aashaka and Chidambaram, Vijay and Cowan, Meghan and Maleki, Saeed and Musuvathi, Madan and Mytkowicz, Todd and Nelson, Jacob and Saarikivi, Olli},
+  author={Shazeer, Noam and Cheng, Youlong and Parmar, Niki and Tran, Dustin and Vaswani, Ashish and Koanantakool, Penporn and Hawkins, Peter and Lee, HyoukJoong and Hong, Mingsheng and Young, Cliff and et al.},
+  author={Shi, S. and Pan, X. and Wang, Q. and others},
+  author={Specification, Base},
+  author={Tan, Lin and Su, Wei and Zhang, Wenpeng and Loo, Boon Thau and Liu, Yifei},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timothée and Rozière, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Lukasz and Polosukhin, Illia},
+  author={Vuppalapati, Midhul and Agarwal, Saksham and Schuh, Henry and Kasikci, Baris and Krishnamurthy, Arvind and Agarwal, Rachit},
+  author={Wan, X. and Yang, X. and Xu, K. and others},
+  author={Wang, Shuai and Gao, Kaihui and Qian, Kun and Li, Dan and Miao, Rui and Li, Bo and Zhou, Yu and Zhai, Ennan and Sun, Chen and Gao, Jiaqi and others},
+  author={Wang, W and Khazraee, M and Zhong, Z and et al.},
+  author={Wang, Zhuang and Jia, Zhen and Zheng, Shuai and Zhang, Zhen and Fu, Xinwei and Ng, T. S. Eugene and Wang, Yida},
+  author={Wu, Y and Xu, Y and Chen, J and et al.},
+  author={Zhao, Chenggang and Deng, Chengqi and Ruan, Chong and Dai, Damai and Gao, Huazuo and Li, Jiashi and Zhang, Liyue and Huang, Panpan and Zhou, Shangyan and Ma, Shirong and others},
+  author={Zhou, Junlan and Tewari, Malveeka and Zhu, Min and Kabbani, Abdul and Poutievski, Leon and Singh, Arjun and Vahdat, Amin},
+  author={Zhou, Y and Chen, Z and Mao, Z and et al.},
+  author={Zhu, Y and Herrod, Eran and Firestone, D and et al.},
+  author={Zuo, Pengfei and Lin, Huimin and Deng, Junbo and Zou, Nan and Yang, Xingkun and Diao, Yingyu and Gao, Weifeng and Xu, Ke and Chen, Zhangyu and Lu, Shirui and others},
+  booktitle = {{GPU} Technology Conference},
+  booktitle = {11th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {12th {USENIX} Symposium on Operating Systems Design and
+  booktitle = {13th {USENIX} Symposium on Operating Systems Design and
+  booktitle = {14th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {14th {USENIX} Symposium on Operating Systems Design and
+  booktitle = {15th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {16th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {18th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {2016 {USENIX} Annual Technical Conference ({ATC} '16)},
+  booktitle = {2019 {USENIX} Annual Technical Conference ({ATC} '19)},
+  booktitle = {20th {USENIX} Conference on File and Storage Technologies
+  booktitle = {20th {USENIX} Symposium on Networked Systems Design and
+  booktitle = {arXiv preprint arXiv:2401.11181},
+  booktitle = {ICML},
+  booktitle = {ISCA},
+  booktitle = {OSDI},
+  booktitle = {Proc. ACM Web Conference (WWW)},
+  booktitle = {Proc. AFIPS Fall Joint Computer Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2009 Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2014 Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2017 Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2019 Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2020 Conference},
+  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2022 Conference},
+  booktitle = {Proceedings of the 12th {ACM} {SIGMETRICS/PERFORMANCE} Joint
+  booktitle = {Proceedings of the 19th International Conference on
+  booktitle = {Proceedings of the 2014 {ACM} {SIGCOMM} Conference},
+  booktitle = {Proceedings of the 2018 {ACM} {SIGCOMM} Conference},
+  booktitle = {Proceedings of the 25th {ACM} Symposium on Operating Systems
+  booktitle = {Proceedings of the 26th Symposium on Operating Systems
+  booktitle = {Proceedings of the 28th {ACM} International Conference on
+  booktitle = {Proceedings of the 29th Symposium on Operating Systems
+  booktitle = {Proceedings of the Seventh Conference on Emerging Networking
+  booktitle = {SOSP},
+  booktitle={14th USENIX Symposium on Operating Systems Design and Implementation (OSDI 20)},
+  booktitle={19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2022)},
+  booktitle={2013 proceedings ieee infocom},
+  booktitle={20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+  booktitle={21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+  booktitle={22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
+  booktitle={ACM SIGCOMM Industrial Demo},
+  booktitle={ACM SIGCOMM NAIC Workshop},
+  booktitle={ACM SIGCOMM},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle={Advances in neural information processing systems},
+  booktitle={Proceedings of ACM SIGCOMM},
+  booktitle={Proceedings of the 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14)},
+  booktitle={Proceedings of the 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI 15)},
+  booktitle={Proceedings of the 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 25)},
+  booktitle={Proceedings of the 2014 ACM conference on SIGCOMM},
+  booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
+  booktitle={Proceedings of the 2023 USENIX Annual Technical Conference (USENIX ATC 23)},
+  booktitle={Proceedings of the 2024 SIGCOMM Workshop on Networks for AI Computing},
+  booktitle={Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+  booktitle={Proceedings of the 21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+  booktitle={Proceedings of the 52nd Annual International Symposium on Computer Architecture},
+  booktitle={Proceedings of the ACM SIGCOMM 2009 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications},
+  booktitle={Proceedings of the ACM SIGCOMM 2010 Conference},
+  booktitle={Proceedings of the ACM SIGCOMM 2017 Conference},
+  booktitle={Proceedings of the ACM SIGCOMM 2024 Conference},
+  booktitle={Proceedings of the ACM SIGCOMM 2025 Conference},
+  booktitle={Proceedings of the ACM special interest group on data communication},
+  booktitle={Proceedings of the ACM Symposium on Operating Systems Principles (SOSP '23)},
+  booktitle={Proceedings of the conference of the ACM special interest group on data communication},
+  booktitle={Proceedings of the Nineteenth European Conference on Computer Systems (EuroSys '24)},
+  booktitle={Proceedings of the Ninth European Conference on Computer Systems},
+  booktitle={Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  doi       = {10.1145/1592568.1592576},
+  doi       = {10.1145/2079296.2079326},
+  doi       = {10.1145/2254756.2254766},
+  doi       = {10.1145/2541940.2541965},
+  doi       = {10.1145/2619239.2626299},
+  doi       = {10.1145/2619239.2626316},
+  doi       = {10.1145/2815400.2815425},
+  doi       = {10.1145/3015146},
+  doi       = {10.1145/3098822.3098825},
+  doi       = {10.1145/3132747.3132762},
+  doi       = {10.1145/3132747.3132764},
+  doi       = {10.1145/3132747.3132772},
+  doi       = {10.1145/3230543.3230564},
+  doi       = {10.1145/3341302.3342079},
+  doi       = {10.1145/3387514.3405897},
+  doi       = {10.1145/3544216.3544224},
+  doi       = {10.1145/3575693.3578835},
+  doi       = {10.1145/3600006.3613165},
+  doi={10.1016/J.JPDC.2008.09.002}
+  doi={10.1145/1592568.1592576}
+  doi={10.1145/2934872.2934888}
+  eprint={2211.05100},
+  eprint={2401.00134},
+  howpublished = {{CUDA} Driver {API} documentation},
+  howpublished = {\url{https: //github.com/ROCm/rccl}},
+  howpublished = {\url{https://developer.nvidia.com/blog/doubling-all2all-performance-with-nvidia-collective-communication-library-2-12/}},
+  howpublished = {\url{https://en.wikipedia.org/wiki/ Equal- cost_multi- path_routing.}},
+  howpublished = {\url{https://github.com/ microsoft/msccl-tools}},
+  howpublished = {\url{https://github.com/deepseek-ai/DeepEP}}
+  howpublished = {\url{https://github.com/linuxrdma/perftest}},
+  howpublished = {\url{https://github.com/NVIDIA/Megatron-LM/tree/ main/examples/gpt3.}},
+  howpublished = {\url{https://github.com/NVIDIA/nccl-tests}},
+  howpublished = {\url{https://github.com/NVIDIA/nccl}},
+  howpublished = {\url{https://jarvislabs.ai/blog/vllm-optimization-techniques}},
+  howpublished = {\url{https://standards.ieee.org/ieee/802.1Qbb/4361/}},
+  howpublished = {Databricks Engineering Blog},
+  howpublished = {Developer documentation},
+  howpublished = {Product brief},
+  howpublished = {Software library},
+  howpublished = {Whitepaper},
+  howpublished={\url{https://github.com/NVIDIA/nvidia-resiliency-ext}},
+  howpublished={\url{https://help.aliyun.com/zh/pai/userguide/accl-alibaba-high-performance-collective-communicationlibrary}},
+  howpublished={\url{https://iq.opengenus.org/vgg16/}},
+  institution = {IETF},
+  institution = {Nielsen Norman Group},
+  institution = {NVIDIA White Paper},
+  institution={P4.org},
+  journal   = {Communications of the {ACM}},
+  journal   = {Journal of Machine Learning Research},
+  journal = {arXiv preprint arXiv:2312.07104},
+  journal = {arXiv preprint arXiv:2407.00079},
+  journal = {arXiv preprint arXiv:2412.15115},
+  journal = {arXiv preprint arXiv:2504.09590},
+  journal = {arXiv preprint arXiv:2510.14392},
+  journal = {GitHub repository},
+  journal={ACM SIGCOMM computer communication review},
+  journal={ACM SIGCOMM Computer Communication Review},
+  journal={arXiv preprint arXiv:1810.04805},
+  journal={arXiv preprint arXiv:2104.04473},
+  journal={arXiv preprint arXiv:2211.05100},
+  journal={arXiv preprint arXiv:2302.13971},
+  journal={arXiv preprint arXiv:2401.00134},
+  journal={arXiv preprint arXiv:2411.01791},
+  journal={arXiv preprint arXiv:2412.19437},
+  journal={arXiv preprint arXiv:2503.20377},
+  journal={arXiv preprint arXiv:2504.17307},
+  journal={arXiv preprint arXiv:2505.11432},
+  journal={arXiv preprint arXiv:2506.12708},
+  journal={Communications of the ACM},
+  journal={Computer networks},
+  journal={Computer Networks},
+  journal={IEEE/ACM Transactions on Networking},
+  journal={J. Parallel Distributed Comput.},
+  journal={Proceedings of the ACM SIGCOMM 2016 Conference},
+  month        = feb,
+  month={August},
+  month={May},
+  note         = {\url{https://developer.nvidia.com/nvshmem}},
+  note         = {\url{https://docs.nvidia.com/cuda/cuda-driver-api/}},
+  note         = {\url{https://docs.nvidia.com/cuda/gpudirect-rdma/}},
+  note         = {Available at: https://www.infinibandta.org}
+  note         = {NVIDIA Developer Blog},
+  note        = {\url{https://www.rfc-editor.org/rfc/rfc5944}},
+  note        = {Excerpt from \emph{Usability Engineering}, Morgan Kaufmann}
+  note        = {White Paper}
+  note      = {arXiv:2408.04323}
+  note      = {Software library},
+  note = {Accessed: 2025-09-18},
+  note={Accessed: 2025-09-18}
+  note={Accessed: Dec 2024}
+  number      = {5944},
+  number    = {4},
+  number={2},
+  number={4},
+  number={6},
+  organization = {InfiniBand Trade Association},
+  organization = {NVIDIA},
+  organization={IEEE}
+  organization={USENIX Association},
+  pages     = {1--14},
+  pages     = {1--16},
+  pages     = {1--39},
+  pages     = {181--198},
+  pages     = {185--201},
+  pages     = {191--208},
+  pages     = {267--277}
+  pages     = {281--297},
+  pages     = {295--306},
+  pages     = {3--18},
+  pages     = {306--324},
+  pages     = {315--332},
+  pages     = {318--333},
+  pages     = {361--378},
+  pages     = {401--414},
+  pages     = {437--450},
+  pages     = {463--479},
+  pages     = {48--54},
+  pages     = {51--62},
+  pages     = {51--66},
+  pages     = {53--64},
+  pages     = {54--70},
+  pages     = {574--587},
+  pages     = {649--667},
+  pages     = {69--87},
+  pages     = {708--721},
+  pages={1--14},
+  pages={1--15},
+  pages={106852},
+  pages={117--124},
+  pages={1232--1234},
+  pages={127--147},
+  pages={1403--1420},
+  pages={16--37},
+  pages={1731--1745},
+  pages={174--187},
+  pages={2130--2138},
+  pages={225--238},
+  pages={2338--2353},
+  pages={236--249},
+  pages={253--264},
+  pages={266--277},
+  pages={29--42},
+  pages={327--341},
+  pages={44--58},
+  pages={455--468},
+  pages={463--479},
+  pages={465--478},
+  pages={473--488},
+  pages={48--53},
+  pages={503--514},
+  pages={51--62},
+  pages={523--536},
+  pages={537--550},
+  pages={554--574},
+  pages={57--70},
+  pages={58--66},
+  pages={581--594},
+  pages={583--598},
+  pages={593--612},
+  pages={609--625},
+  pages={615--632},
+  pages={63--74},
+  pages={645--662},
+  pages={679--690},
+  pages={691--706},
+  pages={709--729},
+  pages={739--767},
+  pages={91--108},
+  pages={945--959},
+  primaryClass={cs.CL},
+  primaryClass={cs.DC},
+  publisher = {{ACM}},
+  publisher = {{USENIX} Association},
+  publisher = {GitHub},
+  publisher={ACM New York, NY, USA}
+  publisher={ACM},
+  publisher={Association for Computing Machinery},
+  publisher={Elsevier}
+  publisher={IEEE}
+  publisher={USENIX Association}
+  publisher={USENIX Association},
+  series={ACM SIGCOMM '24}
+  title        = {{BlueField}-3 {Data} {Processing} {Unit}: Architecture Overview},
+  title        = {{CUDA} Virtual Memory Management},
+  title        = {{GPUDirect} {RDMA}},
+  title        = {{LLM} Inference Performance Engineering: Best Practices},
+  title        = {{NVLink} and {NVSwitch}: The Building Blocks of Advanced
+  title        = {{NVSHMEM}: Partitioned Global Address Space for {GPU} Clusters},
+  title        = {{vLLM} Optimization Techniques: 5 Practical Methods to Improve Performance},
+  title        = {Doubling all2all Performance with {NVIDIA} Collective Communication Library 2.12},
+  title        = {Supplement to {InfiniBand} Architecture Specification Volume 1 Release 1.2.1, Annex A17: {RoCE}},
+  title       = {{IP Mobility Support for {IPv4}, Revised}},
+  title       = {{NVIDIA NVLink} High-Speed Interconnect: Technology Overview},
+  title       = {Response Times: The {3} Important Limits},
+  title     = {{1RMA}: Re-envisioning Remote Memory Access for Multi-tenant
+  title     = {{AIFM}: {High-Performance}, {Application-Integrated} Far Memory},
+  title     = {{Azure} Accelerated Networking: {SmartNICs} in the Public Cloud},
+  title     = {{Caladan}: Mitigating Interference at Microsecond Timescales},
+  title     = {{CONGA}: Distributed Congestion-Aware Load Balancing for
+  title     = {{DistServe}: Disaggregating Prefill and Decoding for
+  title     = {{FaRM}: Fast Remote Memory},
+  title     = {{FaSST}: Fast, Scalable and Simple Distributed Transactions
+  title     = {{FlexGen}: High-Throughput Generative Inference of Large
+  title     = {{Homa}: A Receiver-Driven Low-Latency Transport Protocol Using
+  title     = {{LegoOS}: A Disseminated, Distributed {OS} for Hardware
+  title     = {{LITE} Kernel {RDMA} Support for Datacenter Applications},
+  title     = {{NCCL}: Optimized Primitives for Collective Multi-{GPU}
+  title     = {{NetCache}: Balancing Key-Value Stores with Fast In-Network
+  title     = {{Orca}: A Distributed Serving System for {Transformer}-Based
+  title     = {{Sarathi-Serve}: Efficient {LLM} Inference by Piggybacking
+  title     = {{SCOOT}: {SLO}-Oriented Performance Tuning for {LLM} Inference Engines},
+  title     = {{Shenango}: Achieving High {CPU} Efficiency for
+  title     = {{Splitwise}: Efficient Generative {LLM} Inference Using
+  title     = {{SRNIC}: A Scalable Architecture for {RDMA} {NICs}},
+  title     = {{VL2}: A Scalable and Flexible Data Center Network},
+  title     = {A Large Scale Analysis of Hundreds of In-Memory Cache
+  title     = {A Unified Architecture for Accelerating Distributed {DNN}
+  title     = {Attack of the Killer Microseconds},
+  title     = {Datacenter {RPCs} can be General and Fast},
+  title     = {dcPIM: Near-Optimal Proactive Datacenter Transport},
+  title     = {Design Guidelines for High Performance {RDMA} Systems},
+  title     = {Efficient Memory Disaggregation with {Infiniswap}},
+  title     = {Efficient Memory Management for Large Language Model Serving
+  title     = {Fast Inference from Transformers via Speculative Decoding},
+  title     = {Hydra: Resilient and Highly Available Remote Memory},
+  title     = {Inference without Interference: Disaggregate {LLM} Inference
+  title     = {No compromises: distributed transactions with consistency,
+  title     = {Offloading Distributed Applications onto {SmartNICs} using
+  title     = {Pond: {CXL}-Based Memory Pooling Systems for Cloud Platforms},
+  title     = {Re-architecting Datacenter Networks and Stacks for Low Latency
+  title     = {Resource Central: Understanding and Predicting Workloads for
+  title     = {Response Time in Man-Computer Conversational Transactions},
+  title     = {Scale-Out {NUMA}},
+  title     = {Scaling Distributed Machine Learning with In-Network Aggregation},
+  title     = {Switch Transformers: Scaling to Trillion Parameter Models with
+  title     = {The Design and Operation of {CloudLab}},
+  title     = {Understanding {RDMA} Microarchitecture Resources for
+  title     = {Using {RDMA} Efficiently for Key-Value Services},
+  title     = {Verifying and Enforcing Network Paths with {ICING}},
+  title     = {Workload Analysis of a Large-Scale Key-Value Store},
+  title   = {{FairBatching}: Fairness-Aware Batch Formation for {LLM} Inference},
+  title   = {{MoonCake}: A {KV}-Cache-Centric Disaggregated Architecture
+  title   = {{Qwen2.5} Technical Report},
+  title   = {{SGLang}: Efficient Execution of Structured Language Model Programs},
+  title   = {Efficient {LLM} Serving on Hybrid Real-time and Best-effort Requests},
+  title = {{DeepEP}: An efficient expert-parallel communication library},
+  title = {IEEE Std 802.1Qbb-2011: Priority-based Flow Control},
+  title={{BLOOM}: A 176B-Parameter Open-Access Multilingual Language Model},
+  title={{Equal-cost multi-path routing (ECMP).}},
+  title={{GEMINI}: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints},
+  title={{Infiniband Verbs Performance Tests.}},
+  title={{Megatron GPT3 MODEL.}},
+  title={{MSCCL Tools.}},
+  title={{NCCL Tests.}},
+  title={{NVIDIA Collective Communications Library (NCCL).}},
+  title={{NVIDIA Resiliency Extension}},
+  title={{ROCm Communication Collectives Library (RCCL).}},
+  title={{TACCL}: Guiding Collective Algorithm Synthesis using Communication Sketches},
+  title={A scalable, commodity data center network architecture},
+  title={A Unified Architecture for Accelerating Distributed DNN Training in Heterogeneous GPU/CPU Clusters},
+  title={Accelerating Design Space Exploration for $\{$LLM$\}$ Training Systems with Multi-experiment Parallel Simulation},
+  title={Accelerating distributed MoE training and inference with Lina},
+  title={ACCL: Alibaba Cloud’s self-developed high-performance collective communication library},
+  title={Alibaba HPN: A data center network for large language model training},
+  title={An Extensible Software Transport Layer for GPU Networking},
+  title={Astral: A Datacenter Infrastructure for Large Language Model Training at Scale},
+  title={Attention is all you need},
+  title={Bandwidth optimal all-reduce algorithms for clusters of workstations},
+  title={BBR: Congestion-based congestion control},
+  title={BERT: Pre-training of deep bidirectional transformers for language understanding},
+  title={CAPS: Coding-based adaptive packet spraying to reduce flow completion time in data center},
+  title={CASSINI: Network-Aware job scheduling in machine learning clusters},
+  title={Characterization of large language model development in the datacenter},
+  title={Check-N-Run: a Checkpointing System for Training Deep Learning Recommendation Models},
+  title={Coflow Scheduling for {LLM} Training},
+  title={CONGA: Distributed congestion-aware load balancing for datacenters},
+  title={Congestion control for large-scale RDMA deployments},
+  title={Crux: GPU-efficient communication scheduling for deep learning training},
+  title={Data center tcp (dctcp)},
+  title={Data Center TCP (DCTCP)},
+  title={Deepseek-v3 technical report},
+  title={Drill: Micro load balancing for low-latency data center networks},
+  title={Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM},
+  title={Enabling Efficient GPU Communication over Multiple NICs with FuseLink},
+  title={GPipe: Efficient training of giant neural networks using pipeline parallelism},
+  title={HPCC: High precision congestion control},
+  title={Improving datacenter performance and robustness with multipath TCP},
+  title={In-band Network Telemetry (INT) Dataplane Specification, Version 2.0},
+  title={In-band network telemetry via programmable dataplanes},
+  title={In-band Network Telemetry: A Survey},
+  title={Information-Agnostic Flow Scheduling for Commodity Data Centers},
+  title={Insights into deepseek-v3: Scaling challenges and reflections on hardware for ai architectures},
+  title={LLaMA: Open and efficient foundation language models},
+  title={MCCS: A Service-based Approach to Collective Communication for Multi-Tenant Cloud},
+  title={Megascale-moe: Large-scale communication-efficient training of mixture-of-experts models in production},
+  title={MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs},
+  title={Mesh-TensorFlow: Deep learning for supercomputers},
+  title={Minder: Faulty Machine Detection for Large-scale Distributed Model Training},
+  title={MixNet: A Runtime Reconfigurable Optical-Electrical Fabric for Distributed Mixture-of-Experts Training},
+  title={Multipath transport and packet spraying for efficient data delivery in data centres},
+  title={On the impact of packet spraying in data center networks},
+  title={PCI Express{\textregistered} Base Specification Revision 3.0},
+  title={Predictable vFabric on informative data plane},
+  title={Presto: Edge-based load balancing for fast datacenter networks},
+  title={RDMA over Ethernet for Distributed Training at Meta Scale},
+  title={Re-architecting datacenter networks and stacks for low latency and high performance},
+  title={Rethinking machine learning collective communication as a multi-commodity flow problem},
+  title={Scaling distributed machine learning with the parameter server},
+  title={Scheduling Mix-flows in Commodity Datacenters with Karuna},
+  title={Schemoe: An extensible mixture-of-experts distributed training system with tasks scheduling},
+  title={Serving Large Language Models on Huawei CloudMatrix384},
+  title={SyCCL: Exploiting Symmetry for Efficient Collective Communication Scheduling},
+  title={TACCL: Guiding Collective Algorithm Synthesis using Communication Sketches},
+  title={TCCL: Co-optimizing Collective Communication and Traffic Routing for GPU-centric Clusters},
+  title={TIMELY: RTT-based congestion control for the datacenter},
+  title={TopoOpt: Co-optimizing network topology and parallelization strategy for distributed training jobs},
+  title={UB-Mesh: a Hierarchically Localized nD-FullMesh Datacenter Network Architecture},
+  title={Understanding PCIe performance for end host networking},
+  title={Understanding the host network},
+  title={Unicron: Economizing Self-Healing {LLM} Training at Scale},
+  title={VGG-16 Architecture},
+  title={VL2: a scalable and flexible data center network},
+  title={Walking the tightrope: Responsive yet stable traffic engineering},
+  title={WCMP: Weighted cost multipathing for improved fairness in data centers},
+  type        = {RFC},
+  url          = {https://developer.nvidia.com/blog/doubling-all2all-performance-with-nvidia-collective-communication-library-2-12/},
+  url         = {https://www.nvidia.com/en-us/data-center/nvlink/},
+  url={https://arxiv.org/abs/1810.04805},
+  url={https://arxiv.org/abs/2104.04473},
+  url={https://arxiv.org/abs/2211.05100}
+  url={https://arxiv.org/abs/2302.13971},
+  url={https://arxiv.org/abs/2401.00134}
+  url={https://arxiv.org/abs/2411.01791},
+  url={https://arxiv.org/abs/2504.17307},
+  url={https://p4.org/wp-content/uploads/sites/53/p4-spec/docs/INT_v2_0.pdf}
+  url={https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/bai}
+  url={https://www.usenix.org/conference/nsdi23/presentation/shah}
+  url={https://www.usenix.org/conference/osdi20/presentation/jiang}
+  url={https://www.usenix.org/system/files/nsdi23-shah.pdf}
+  volume    = {23},
+  volume    = {60},
+  volume={144},
+  volume={162},
+  volume={27},
+  volume={30},
+  volume={31},
+  volume={32},
+  volume={35},
+  volume={38},
+  volume={41},
+  volume={45},
+  volume={60},
+  volume={69},
+  year         = {2014},
+  year         = {2022},
+  year         = {2023}
+  year         = {2023},
+  year         = {2024}
+  year        = {1993},
+  year        = {2010},
+  year        = {2014},
+  year      = {1968},
+  year      = {2009},
+  year      = {2011},
+  year      = {2012},
+  year      = {2014},
+  year      = {2015},
+  year      = {2016},
+  year      = {2017},
+  year      = {2018},
+  year      = {2019},
+  year      = {2020},
+  year      = {2021},
+  year      = {2022}
+  year      = {2022},
+  year      = {2023}
+  year      = {2023},
+  year      = {2024}
+  year      = {2025},
+  year    = {2024}
+  year    = {2025}
+  year = {2011}
+  year = {2024},
+  year={2002}
+  year={2005}
+  year={2008},
+  year={2009},
+  year={2010}
+  year={2011},
+  year={2013},
+  year={2014}
+  year={2014},
+  year={2015}
+  year={2015},
+  year={2016},
+  year={2017}
+  year={2017},
+  year={2018}
+  year={2018},
+  year={2019}
+  year={2019},
+  year={2020},
+  year={2021},
+  year={2022}
+  year={2023}
+  year={2023},
+  year={2024}
+  year={2024},
+  year={2025}
+  year={2025},
+}
+}%% Bibliography for Datackets NSDI 2027 paper
+@article{allreduce,
+@article{bros2024priority,
+@article{cardwell2017bbr,
+@article{cloudmatrix384,
+@article{dcqcn,
+@article{devlin2019,
+@article{fattree,
+@article{he2015presto,
+@article{he2023unicron,
+@article{int,
+@article{jin2025megascale,
+@article{karuna-sigcomm16,
+@article{killerus,
+@article{le2023bloom,
+@article{liao2025ub,
+@article{lin2024fairbatching,
+@article{liu2024deepseek,
+@article{llama2023,
+@article{megatron-lm2021,
+@article{mittal2015timely,
+@article{mptcp,
+@article{netfault,
+@article{packetspraying1,
+@article{packetspraying3,
+@article{PCIE,
+@article{qin2024mooncake,
+@article{qwen2025qwen25,
+@article{switch-transformer,
+@article{texcp,
+@article{uccl,
+@article{zheng2024sglang,
+@incollection{li2019hpcc,
+@inproceedings{accelnet,
+@inproceedings{agrawal2024sarathi,
+@inproceedings{aifm,
+@inproceedings{alizadeh2014conga,
+@inproceedings{azure-traces,
+@inproceedings{bai-nsdi15,
+@inproceedings{bert,
+@inproceedings{caladan,
+@inproceedings{cao2025syccl,
+@inproceedings{cassini,
+@inproceedings{channel,
+@inproceedings{cloudlab,
+@inproceedings{conga,
+@inproceedings{crux,
+@inproceedings{cxl,
+@inproceedings{dcn-jumbo,
+@inproceedings{dcpim,
+@inproceedings{dctcp,
+@inproceedings{deepseek-v3-insights,
+@inproceedings{dp,
+@inproceedings{ECN,
+@inproceedings{eisenman2022checknrun,
+@inproceedings{ep,
+@inproceedings{erpc,
+@inproceedings{farm14,
+@inproceedings{farm15,
+@inproceedings{fasst,
+@inproceedings{fb-memcached,
+@inproceedings{fuselink,
+@inproceedings{ghorbani2017drill,
+@inproceedings{homa,
+@inproceedings{hpn,
+@inproceedings{hu2024characterization,
+@inproceedings{hu2024inference,
+@inproceedings{husky,
+@inproceedings{hydra,
+@inproceedings{icing,
+@inproceedings{infiniswap,
+@inproceedings{ipipe,
+@inproceedings{jiang2020unified,
+@inproceedings{jiang2024,
+@inproceedings{kwon2023vllm,
+@inproceedings{legoos,
+@inproceedings{leviathan2023fast,
+@inproceedings{li2024tccl,
+@inproceedings{lite,
+@inproceedings{mccs,
+@inproceedings{meng2025astral,
+@inproceedings{metascale,
+@inproceedings{miller1968response,
+@inproceedings{mixnet,
+@inproceedings{multiverse,
+@inproceedings{nccl,
+@inproceedings{ndp,
+@inproceedings{netcache,
+@inproceedings{nic-arch,
+@inproceedings{onerma,
+@inproceedings{p4int,
+@inproceedings{packetspraying2,
+@inproceedings{patel2024splitwise,
+@inproceedings{pciecontention,
+@inproceedings{pp,
+@inproceedings{rdma-ml,
+@inproceedings{rdma-opt,
+@inproceedings{rdma-perf,
+@inproceedings{shah2023taccl,
+@inproceedings{shenango,
+@inproceedings{sheng2023flexgen,
+@inproceedings{shi2024schemoe,
+@inproceedings{sonuma,
+@inproceedings{switchml,
+@inproceedings{taccl,
+@inproceedings{teccl,
+@inproceedings{topoopt,
+@inproceedings{tp,
+@inproceedings{twitter-trace,
+@inproceedings{vaswani2017,
+@inproceedings{vl2,
+@inproceedings{vllm,
+@inproceedings{vuppalapati2024understanding,
+@inproceedings{wan2025coflow,
+@inproceedings{wang2022predictable,
+@inproceedings{wang2023gemini,
+@inproceedings{yu2022orca,
+@inproceedings{zhang2024scoot,
+@inproceedings{zhong2024distserve,
+@inproceedings{zhou2014wcmp,
+@manual{RoCE,
+@misc{accl-alibaba2024,
+@misc{bluefield,
+@misc{cumem,
+@misc{dash-vgg16,
+@misc{databricks2023llm,
+@misc{DeepEP,
+@misc{ecmp,
+@misc{gpt3,
+@misc{gpudirect,
+@misc{ib,
+@misc{jarvislabs2024prefix,
+@misc{msccl,
+@misc{nccl-test,
+@misc{nccl,
+@misc{nvidia2024resiliency,
+@misc{nvlink,
+@misc{nvshmem,
+@misc{PFC,
+@misc{rccl,
+@online{pxn,
+@techreport{mobileip,
+@techreport{nielsen1993response,
+@techreport{NVLink,
+@techreport{p4intspec,
+%% ============================================================
+%% Human-experience latency thresholds (HCI)
+%% LLM Serving Systems
+%% Memory Management / KV Cache
+%% Models
+%% Serving Benchmarks and Tuning
+%% Speculative Decoding
+%% Workloads and Benchmarks
+year={2022},
+year={2025},
+
+% === Traffic Engineering references for CPTE paper ===
+
+@inproceedings{hong2013b4,
+  title     = {{B4}: Experience with a Globally-Deployed Software Defined {WAN}},
+  author    = {Hong, Chi-Yao and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gill, Vijay and Nanduri, Mohan and Wattenhofer, Roger},
+  booktitle = {Proceedings of the ACM SIGCOMM 2013 Conference},
+  year      = {2013}
+}
+
+@inproceedings{hong2013swan,
+  title     = {Achieving High Utilization with Software-Driven {WAN}},
+  author    = {Hong, Chi-Yao and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gill, Vijay and Nanduri, Mohan and Wattenhofer, Roger},
+  booktitle = {Proceedings of the ACM SIGCOMM 2013 Conference},
+  year      = {2013}
+}
+
+@inproceedings{kumar2015bwe,
+  title     = {{BwE}: Flexible, Hierarchical Bandwidth Allocation for {WAN} Distributed Computing},
+  author    = {Kumar, Alok and Jain, Sushant and Naik, Uday and Raghuraman, Anand and Kasinadhuni, Nikhil and Zermeno, Enrique and Gunn, C. Stephen and Ai, Jing and Carlin, Bj{\"o}rn and Amarandei-Stavila, Mihai and others},
+  booktitle = {Proceedings of the 2015 ACM Conference on Special Interest Group on Data Communication (SIGCOMM)},
+  year      = {2015}
+}
+
+@inproceedings{kumar2018smore,
+  title     = {Semi-Oblivious Traffic Engineering: The Road Not Taken},
+  author    = {Kumar, Praveen and Yuan, Yang and Yu, Chris and Foster, Nate and Kleinberg, Robert and Soul{\'e}, Robert},
+  booktitle = {15th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  year      = {2018}
+}
+
+@manual{gurobi,
+  title     = {Gurobi Optimizer Reference Manual},
+  author    = {{Gurobi Optimization, LLC}},
+  year      = {2023},
+  url       = {https://www.gurobi.com}
+}
+
+@inproceedings{xu2023teal,
+  title     = {Teal: Learning-Accelerated Optimization of {WAN} Traffic Engineering},
+  author    = {Xu, Zhiying and Yan, Francis Y. and Singh, Rachee and Chiu, Justin T. and Rush, Alexander M. and Yu, Minlan},
+  booktitle = {Proceedings of the ACM SIGCOMM 2023 Conference},
+  pages     = {378--393},
+  year      = {2023}
+}
+
+@inproceedings{zhang2023dote,
+  title     = {{DOTE}: Rethinking (Predictive) {WAN} Traffic Engineering},
+  author    = {Zhang, Yibo and Kumar, Alok and Zarchy, Doron and Agarwal, Shivang and Alizadeh, Mohammad and Yu, Minlan},
+  booktitle = {20th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  year      = {2023}
+}
+
+@inproceedings{racke2002minimizing,
+  title     = {Minimizing Congestion in General Networks},
+  author    = {R{\"a}cke, Harald},
+  booktitle = {Proceedings of the 43rd Annual IEEE Symposium on Foundations of Computer Science (FOCS)},
+  year      = {2002}
+}
+
+@inproceedings{wang2006cope,
+  title     = {{COPE}: Traffic Engineering in Dynamic Networks},
+  author    = {Wang, Hao and Xie, Haiyong and Qiu, Lili and Yang, Yang Richard and Zhang, Yin and Greenberg, Albert},
+  booktitle = {Proceedings of the 2006 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)},
+  year      = {2006}
+}
+
+@inproceedings{roughan2011measuring,
+  title     = {Measuring Long-Range Dependence in Network Traffic},
+  author    = {Roughan, Matthew and Veitch, Darryl},
+  booktitle = {Self-Similar Network Traffic and Performance Evaluation},
+  year      = {2000}
+}
+
+@inproceedings{clarkson2001sparsification,
+  title     = {Coresets, Sparse Greedy Approximation, and the {Frank-Wolfe} Algorithm},
+  author    = {Clarkson, Kenneth L.},
+  booktitle = {Proceedings of the 19th Annual Symposium on Computational Geometry (SoCG)},
+  year      = {2003}
+}
+

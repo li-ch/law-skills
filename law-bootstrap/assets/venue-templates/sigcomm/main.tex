@@ -1,0 +1,64 @@
+\documentclass[sigconf,10pt]{acmart}
+
+\usepackage{amsmath,amssymb}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,arrows.meta}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\setlist{itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+
+%% ============================================================
+%% Paper-specific macros — fill in after bootstrap
+%% ============================================================
+
+\newcommand{\sys}{SYSTEMNAME\xspace}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\title{Paper Title}
+
+\author{Anonymous}
+
+\begin{abstract}
+[Write the abstract here.]
+\end{abstract}
+
+\maketitle
+
+%% ============================================================
+%% Sections
+%% ============================================================
+
+\input{sections/1.intro}
+\input{sections/2.bg}
+\input{sections/3.overview}
+\input{sections/4.design}
+\input{sections/5.implementation}
+\input{sections/6.evaluation}
+\input{sections/7.related}
+\input{sections/8.conclusion}
+
+%% ============================================================
+%% Bibliography
+%% ============================================================
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+temp/
+
+# Package
+node_modules/
+dist/
+*.zip
+
+# Git
+.git/

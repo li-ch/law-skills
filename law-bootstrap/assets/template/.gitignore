@@ -1,0 +1,16 @@
+temp/
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.pdf
+*.synctex.gz

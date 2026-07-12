@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{PRIMEarxiv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,arrows.meta}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{url}
+
+\fancyhead{}
+
+%% ============================================================
+%% Paper-specific macros — fill in after bootstrap
+%% ============================================================
+
+\newcommand{\sys}{SYSTEMNAME\xspace}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\title{Paper Title}
+
+\author{
+  Anonymous \\
+  Anonymous Institution \\
+  \texttt{anonymous@example.edu}
+}
+
+\maketitle
+
+%% ============================================================
+\begin{abstract}
+%% ============================================================
+
+[Write the abstract here.]
+
+\end{abstract}
+
+%% ============================================================
+%% Sections
+%% ============================================================
+
+\input{sections/1.intro}
+\input{sections/2.bg}
+\input{sections/3.overview}
+\input{sections/4.design}
+\input{sections/5.implementation}
+\input{sections/6.evaluation}
+\input{sections/7.related}
+\input{sections/8.conclusion}
+
+%% ============================================================
+%% Bibliography
+%% ============================================================
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
