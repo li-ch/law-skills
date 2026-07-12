@@ -85,5 +85,5 @@ Use the template that matches the language. Default to Chinese unless the user s
 
 After writing the guide, update `todo.md`:
 - Items requiring experiments → mark ⏳ WAITING ON DATA
-- Add pointer: "See Experiment N in experiments-guide.md"
+- Add pointer: "See Experiment N in expr.todo.md"
 - Items completed by the human → agent verifies deliverables exist, then marks done

@@ -57,7 +57,7 @@ After writing `todo.md`, tell the user:
 
 After writing `todo.md`, count items that require experiments (new measurements, stress tests, code execution, hardware access, figure generation). The agent cannot complete these. If any such items exist:
 
-1. Mark them ⏳ WAITING ON DATA in `todo.md` with "See Experiment N in experiments-guide.md"
+1. Mark them ⏳ WAITING ON DATA in `todo.md` with "See Experiment N in expr.todo.md"
 2. Tell the user: "N items require experiments. Use `law-call4expr` to create an experiment guide."
 3. If the user says yes, invoke `law-call4expr` to produce the guide
 
