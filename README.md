@@ -175,7 +175,7 @@ No manual configuration needed — `install.sh` sets everything up.
 ## More Resources
 
 - **[Lecture Slides](https://li-ch.github.io/law-skills/)** — 80-slide presentation covering all 10 skills with a case study
-- **[FrosTE Paper](https://github.com/li-ch/froste-paper)** — real paper written with LAW skills (NSDI 2027 submission, in progress)
+- **[Example Paper](https://github.com/li-ch/example-paper)** — real paper written with LAW skills (venue submission, in progress)
 - **[Contributing](CONTRIBUTING.md)** — how to report bugs, submit bib entries, or propose rule changes
 
 ---
