@@ -26,3 +26,6 @@ dist/
 
 # Git
 .git/
+
+# Local task tracker (not published)
+todo.md
