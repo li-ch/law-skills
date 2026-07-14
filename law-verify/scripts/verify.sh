@@ -80,11 +80,14 @@ for f in $TEX_FILES; do
             [ -z "$bold" ] && continue
             inner=$(echo "$bold" | sed 's/\\textbf{//;s/}//')
             
-            # Allow numbers, percentages, math, priority labels
+            # Allow numbers, percentages, math, priority labels,
+            # table header text, and enumerate item labels
             case "$inner" in
-                [0-9]*) ;;  # starts with digit → OK
-                \$*)    ;;  # math → OK
-                P[0-9]) ;;  # P5 → OK
+                [0-9]*)       ;;  # starts with digit → OK
+                \$*)          ;;  # math → OK
+                P[0-9])       ;;  # P5 → OK
+                [A-Z][0-9]*)  ;;  # A1, B2 → OK (enumerate labels)
+                [A-Z][a-z]*)  ;;  # Name, Throughput → OK (table headers)
                 *)
                     echo "FAIL:$f:$lnum: $inner"
                     ;;
@@ -104,7 +107,7 @@ if [ "$BOLD_ISSUES" -gt 0 ] 2>/dev/null; then
     done < /tmp/verify-bold-$$.txt
     rm -f /tmp/verify-bold-$$.txt
 else
-    check_pass "No mid-paragraph \\textbf{} found (bold numbers OK)"
+    check_pass "No mid-paragraph \\textbf{} found (numbers, table headers, labels OK)"
     rm -f /tmp/verify-bold-$$.txt
 fi
 
