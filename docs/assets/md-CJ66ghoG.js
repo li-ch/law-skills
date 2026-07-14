@@ -1,0 +1,10 @@
+import{L as e,T as t,Y as n,_ as r,b as i,g as a,gt as o,mt as s,x as c}from"./modules/shiki-33HJNtCk.js";import{n as l,t as u}from"./slidev/context-CI6X9Mvb.js";import{t as d}from"./slidev/default-j31DG4wO.js";import{t as f}from"./slidev/CodeBlockWrapper-DM-Zim05.js";var p={__name:`slides.md__slidev_58`,setup(p){let{$slidev:m,$nav:h,$clicksContext:g,$clicks:_,$page:v,$renderContext:y,$frontmatter:b}=l();return g.setup(),(l,p)=>{let m=f;return e(),r(d,o(t(s(u)(s(b),57))),{default:n(()=>[p[1]||=a(`h1`,null,`Timeline (8 Days)`,-1),c(m,{title:``,ranges:[]},{default:n(()=>[...p[0]||=[a(`pre`,{class:`shiki shiki-themes vitesse-dark vitesse-light slidev-code`,style:{"--shiki-dark":`#dbd7caee`,"--shiki-light":`#393a34`,"--shiki-dark-bg":`#121212`,"--shiki-light-bg":`#ffffff`}},[a(`code`,{class:`language-text`},[a(`span`,{class:`line`},[a(`span`,null,`Day 1: law-bootstrap → example-nsdi-2027-fall/ created`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 2: law-write → all 8 sections drafted`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 3: law-build → first compilation, 12 pages`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`       law-verify → 11 citations missing, 2 undefined refs`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 4: Abstract rewritten 6 rounds, humanized each round`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 5: Reviews arrived → law-review → 28 items in todo.md`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`       Auto-detected 14 experiment items → law-call4expr`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 6: law-revise → 14 text-only items, one-by-one`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 7: System renamed SwiftCache → SwiftCache`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Day 8: Elephant/mice terminology removed`)])])],-1)]]),_:1})]),_:1},16)}}};export{p as default};

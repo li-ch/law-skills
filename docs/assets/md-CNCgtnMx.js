@@ -1,0 +1,9 @@
+import{L as e,T as t,Y as n,_ as r,b as i,g as a,gt as o,mt as s,x as c}from"./modules/shiki-33HJNtCk.js";import{n as l,t as u}from"./slidev/context-CI6X9Mvb.js";import{t as d}from"./slidev/default-j31DG4wO.js";import{t as f}from"./slidev/CodeBlockWrapper-DM-Zim05.js";var p={__name:`slides.md__slidev_47`,setup(p){let{$slidev:m,$nav:h,$clicksContext:g,$clicks:_,$page:v,$renderContext:y,$frontmatter:b}=l();return g.setup(),(l,p)=>{let m=f;return e(),r(d,o(t(s(u)(s(b),46))),{default:n(()=>[p[1]||=a(`h1`,null,[a(`code`,null,`law-resubmit`)],-1),p[2]||=a(`br`,null,null,-1),p[3]||=a(`p`,null,`Copies paper repo, swaps venue templates, archives old artifacts, continues git history.`,-1),c(m,{title:``,ranges:[]},{default:n(()=>[...p[0]||=[a(`pre`,{class:`shiki shiki-themes vitesse-dark vitesse-light slidev-code`,style:{"--shiki-dark":`#dbd7caee`,"--shiki-light":`#393a34`,"--shiki-dark-bg":`#121212`,"--shiki-light-bg":`#ffffff`}},[a(`code`,{class:`language-text`},[a(`span`,{class:`line`},[a(`span`,null,`# User:`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`Resubmit to SIGCOMM 2027`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`# Agent:`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`→ example-sigcomm-2027/ (usenix2019_v3 → acmart sigconf)`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`→ old PDFs → archive/`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`→ old reviews → archive/reviews/`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`→ committed: "resubmit: switch venue to sigcomm 2027"`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`→ All sections, figures, data preserved`)])])],-1)]]),_:1}),p[4]||=a(`br`,null,null,-1),p[5]||=a(`p`,null,[a(`strong`,null,`30 seconds instead of 6 hours of re-formatting.`)],-1)]),_:1},16)}}};export{p as default};
