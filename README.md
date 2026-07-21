@@ -1,6 +1,6 @@
 # LAW Skills for OpenCode
 
-**LAW (Li's Academic Writing) is a set of 10 AI agent skills that let you write an academic paper with OpenCode in days, not weeks.**
+**LAW (Li's Academic Writing) is a set of 10 AI agent skills that let you write an academic paper with OpenCode in a principled way.**
 
 You bootstrap a paper repo with one sentence. The agent writes sections following 25 writing rules. You say "build" and it runs pdflatex 4 times, produces a timestamped PDF, runs post-build checks, and commits to git — all in one step. When reviews come back, it parses them into a structured checklist, implements text fixes one at a time, and writes experiment guides for your students.
 
