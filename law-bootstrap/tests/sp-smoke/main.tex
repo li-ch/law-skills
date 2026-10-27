@@ -1,0 +1,50 @@
+%% IEEE S&P (IEEE Symposium on Security and Privacy) paper template.
+%% Spec (S&P 2027 CFP, https://www.ieee-security.org/TC/SP2027/cfpapers.html):
+%%   - IEEEtran.cls V1.8b (vendored next to this file; also on CTAN)
+%%   - US Letter (the class default; never A4)
+%%   - 13 pages text + 5 pages references/appendix = 18 total (body-only: 13)
+%%   - double-blind: author block must be anonymous AND the template's fake
+%%     demo author names must not survive into a submission
+%%   - do NOT load \usepackage{usenix} or any layout-override package when
+%%     adapting from other venues; no margin/font/spacing scrunching
+%%   - no MS Word template exists for this venue; PDF only
+%%   - HotCRP's format check is limited: self-verify against the Overleaf
+%%     "IEEE Demo Template for Computer Society Conferences" sample
+\documentclass[conference,compsoc]{IEEEtran}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Paper Title: Capitalize as IEEE Requires}
+
+% Double-blind venue: keep the author block anonymous in the submission
+% copy, and make sure no template demo author names remain anywhere.
+\author{\IEEEauthorblockN{Anonymous Submission}
+\IEEEauthorblockA{Paper number as assigned by the submission system}}
+
+\maketitle
+
+\begin{abstract}
+One paragraph, no undefined references, no citations in the abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+security, measurement, networks
+\end{IEEEkeywords}
+
+\section{Introduction}
+Body text with a citation~\cite{testref}.
+
+\section{Conclusion}
+Conclusions.
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

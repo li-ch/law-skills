@@ -13,7 +13,7 @@ Run post-build checks on a compiled LaTeX paper. This is invoked automatically a
 2. **All `\ref{}` resolve** — no "Reference undefined" warnings in log
 3. **All `\cite{}` resolve** — no "Citation undefined" warnings in log
 4. **No `\textbf{}` mid-paragraph** — only `\noindent\textbf{Label.}` at paragraph start is allowed
-5. **No hyphens in prose** — use "which" or "that" clauses instead
+5. **No long dashes in prose** — `---` (em dash) and `--` (en dash) are not allowed; hyphens in compound words are fine
 6. **Appendix breadcrumbs** — WARNING only if an appendix label has no `\cref` in main body
 
 ## How to run

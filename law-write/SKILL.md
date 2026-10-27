@@ -1,11 +1,15 @@
 ---
 name: law-write
-description: Write or edit academic paper sections in LaTeX following Li's 21 writing rules for computer networking papers. Use when the user asks to write a section, edit text, improve the introduction, or draft content for their paper. After writing, invoke the humanizer skill to remove AI-generated writing artifacts.
+description: Write or edit academic paper sections in LaTeX following Li's 23 writing rules for computer networking papers. Use when the user asks to write a section, edit text, improve the introduction, or draft content for their paper. After writing, invoke the humanizer skill to remove AI-generated writing artifacts.
 ---
 
 # LAW Write
 
-Write or edit LaTeX paper sections following Li's Academic Writing conventions. Every output must conform to the 21 writing rules defined in `references/writing-rules.md`.
+Write or edit LaTeX paper sections following Li's Academic Writing conventions. Every output must conform to the 25 writing rules defined in `references/writing-rules.md`.
+
+For the owner' + chr(39) + 's inline % comments in tex sources, run the law-issues
+cycle (capture verbatim into the paper' + chr(39) + 's ISSUES.md, fix, describe,
+generalize, verify, commit); do not process them inline here.
 
 ## Before writing
 
@@ -22,18 +26,20 @@ If `CLAUDE.md` has an unfilled "Paper Narrative" section, warn the user: "The pa
 
 Core rules (see `references/writing-rules.md` for full details with examples):
 
-1. Active voice, present tense, first person ("We find that...")
+1. Active voice, present tense, first person ("We find that..."); our own work takes we/our/ours as the sentence subject wherever grammatical (rule 25), and attack-enabling conditions get negative verbs, never "cheap" framing
 2. Lead every paragraph with its main claim
 3. Quantify every claim with specific numbers in normal weight
 4. Name your discoveries with `\emph{}`
 5. Never hedge — "This exposes a gap" not "This may suggest a gap"
 6. Ground mechanisms in expert behavior: "Operators do X. Our system does Y."
 7. One idea per sentence; no stacked subordinate clauses
-8. No hyphens; use "which" or "that" instead
+8. No long dashes (`---` or `--`); hyphens in compound words are fine; never begin a sentence with a number (rule 24)
 9. No `\textbf{}` mid-paragraph (bold numbers are OK); `\noindent\textbf{Label.}` for run-in heads
 10. Code names in `\texttt{}`, system name as `\sys`
 11. `\resizebox` for all tables; `algorithm`/`algpseudocode` only for algorithms
 12. Leave `\textcolor{red}{##?}` for missing numbers, `\textcolor{red}{TODO:}` for unfinished work
+22. Macro entities act through the authors: "We build a prototype that..." never "A prototype ...s" — only functions/processes/classes/contracts may be active subjects of their own mechanics
+23. Never use "X, not Y" contrastive apposition (nor "not X but Y" / rhetorical "rather than") — state the positive claim; give the contrast its own sentence
 
 Section discipline:
 

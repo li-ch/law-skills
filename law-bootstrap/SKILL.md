@@ -1,6 +1,6 @@
 ---
 name: law-bootstrap
-description: Create a new academic paper repository with the correct directory structure, venue template, and agent instruction files. Use when the user asks to create a new paper, bootstrap a paper project, start a new submission, or set up a paper repo for a specific venue (NSDI, SIGCOMM, APNet, arxiv).
+description: Create a new academic paper repository with the correct directory structure, venue template, and agent instruction files. Use when the user asks to create a new paper, bootstrap a paper project, start a new submission, or set up a paper repo for a specific venue (NSDI, IEEE S&P, SIGCOMM, APNet, arxiv, IEEE/ACM ToN).
 ---
 
 # LAW Bootstrap
@@ -11,7 +11,7 @@ Create a new academic paper repository from scratch. This skill initializes the 
 
 Read `~/.common-law/paper-style/venue-map.md` for the authoritative mapping of venues to document classes, style files, bib styles, page limits, and anonymization requirements.
 
-Supported venues: `nsdi`, `sigcomm`, `apnet`, `arxiv`.
+Supported venues: `nsdi`, `sp` (IEEE S&P), `sigcomm`, `apnet`, `arxiv`, `ton` (IEEE/ACM Transactions on Networking).
 
 ## Workflow
 
@@ -21,7 +21,7 @@ Ask the user for each parameter. Do not proceed until all required parameters ar
 
 Required:
 - Paper name (short lowercase identifier, e.g., `swiftcache`)
-- Venue (`nsdi`, `sigcomm`, `apnet`, or `arxiv`)
+- Venue (`nsdi`, `sp`, `sigcomm`, `apnet`, or `arxiv`)
 - Year (e.g., `2027`)
 
 Optional:

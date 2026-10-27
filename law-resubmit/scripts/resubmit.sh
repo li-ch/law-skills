@@ -65,6 +65,7 @@ fi
 VENUE_DISPLAY="$VENUE"
 case "$VENUE" in
     nsdi) VENUE_DISPLAY="NSDI" ;;
+    sp) VENUE_DISPLAY="IEEE S&P" ;;
     sigcomm) VENUE_DISPLAY="SIGCOMM" ;;
     apnet) VENUE_DISPLAY="APNet" ;;
     arxiv) VENUE_DISPLAY="arXiv" ;;

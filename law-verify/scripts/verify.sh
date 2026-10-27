@@ -22,18 +22,18 @@ check_warn() { echo -e "  ${YELLOW}[WARN]${NC} $1"; WARN=$((WARN + 1)); }
 echo "=== law-verify ==="
 echo ""
 
-# Check 1: No emdashes
-echo "--- Check 1: No emdashes (---) ---"
-EMDASH_ISSUES=0
+# Check 1: No long dashes (em dash --- or en dash --)
+echo "--- Check 1: No long dashes (--- or --) ---"
+DASH_ISSUES=0
 for f in $TEX_FILES; do
-    while IFS= read -r line_num; do
+    while IFS=: read -r line_num rest; do
         [ -z "$line_num" ] && continue
-        EMDASH_ISSUES=$((EMDASH_ISSUES + 1))
-        check_fail "$f:$line_num — emdash found"
-    done < <(grep -n -- '---' "$f" 2>/dev/null || true)
+        DASH_ISSUES=$((DASH_ISSUES + 1))
+        check_fail "$f:$line_num — long dash found"
+    done < <(grep -nE '(---|(?<![a-zA-Z0-9])--(?![a-zA-Z0-9]))' "$f" 2>/dev/null | grep -vE '\\\\|\\cite|\\ref|\\cref|%.*--|^[0-9]+:\s*#' || true)
 done
-if [ "$EMDASH_ISSUES" -eq 0 ]; then
-    check_pass "No emdashes found"
+if [ "$DASH_ISSUES" -eq 0 ]; then
+    check_pass "No long dashes found"
 fi
 
 # Check 2: All \ref{} resolve
@@ -111,18 +111,19 @@ else
     rm -f /tmp/verify-bold-$$.txt
 fi
 
-# Check 5: No hyphens in prose (skip LaTeX commands, comments, and known compound indicators)
-echo "--- Check 5: Hyphens in prose ---"
+# Check 5: No single hyphens used as dashes (space-hyphen-space or start-hyphen-space)
+# Compound-word hyphens (e.g., "pattern-correlated", "cost-effective") are allowed.
+echo "--- Check 5: Hyphens used as dashes in prose ---"
 HYPHEN_ISSUES=0
 for f in $TEX_FILES; do
     while IFS=: read -r line_num rest; do
         [ -z "$line_num" ] && continue
         HYPHEN_ISSUES=$((HYPHEN_ISSUES + 1))
-        check_fail "$f:$line_num — hyphen in prose"
-    done < <(grep -nE '[a-z]-[a-z]' "$f" 2>/dev/null | grep -vE '\\\\|\\cite|\\ref|\\cref|%.*-|^[0-9]+:\s*#' | head -10)
+        check_fail "$f:$line_num — hyphen used as dash (space - space or similar)"
+    done < <(grep -nE '(^|[[:space:]])-([[:space:]]|$)|[[:space:]]-[[:space:]]' "$f" 2>/dev/null | grep -vE '\\\\|\\cite|\\ref|\\cref|%.*-|^[0-9]+:\s*#' | head -10 || true)
 done
 if [ "$HYPHEN_ISSUES" -eq 0 ]; then
-    check_pass "No hyphens in prose"
+    check_pass "No hyphens used as dashes (compound-word hyphens OK)"
 fi
 
 # Check 6: Appendix cross-references (warning only)
@@ -149,6 +150,20 @@ for f in $APP_TEX; do
 done
 if [ "$APPENDIX_ISSUES" -eq 0 ]; then
     check_pass "All appendix labels have main-body cross-references"
+fi
+
+# Check 7: No "X, not Y" contrastive apposition (writing rule 23)
+echo "--- Check 7: X-not-Y contrastive apposition ---"
+NOTY_ISSUES=0
+for f in $TEX_FILES; do
+    while IFS=: read -r line_num rest; do
+        [ -z "$line_num" ] && continue
+        NOTY_ISSUES=$((NOTY_ISSUES + 1))
+        check_fail "$f:$line_num — 'X, not Y' contrastive apposition (rule 23: state the positive claim; give the contrast its own sentence)"
+    done < <(grep -nE ', not |[a-z] rather than |not because|, never [a-z]' "$f" 2>/dev/null | grep -vE '^[0-9]+:\s*%|\\%' | head -5 || true)
+done
+if [ "$NOTY_ISSUES" -eq 0 ]; then
+    check_pass "No X-not-Y contrastive appositions"
 fi
 
 echo ""

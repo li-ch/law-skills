@@ -1,0 +1,58 @@
+%% IEEE/ACM Transactions on Networking (ToN) journal paper template.
+%% Spec (ToN submissions page, https://sites.google.com/view/ieee-acm-ton/submissions,
+%% and the journal's Information for Authors):
+%%   - IEEEtran.cls V1.8b (vendored next to this file; also on CTAN)
+%%     in JOURNAL mode: two-column, single-spaced, 10pt
+%%   - typical maximum for regular papers: 14 pages in the standard
+%%     two-column format (longer possible with justification + page
+%%     charges; do not plan for it)
+%%   - single-blind journal: real author names in the submission copy
+%%   - no deadline: submitted via ScholarOne when ready
+%%   - conference extensions are acceptable with substantial new material
+\documentclass[journal]{IEEEtran}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cleveref}% smart references (\cref) — load after hyperref
+
+%% System name macro — set in AGENTS.md, used everywhere in the body.
+\newcommand{\sys}{Rouster}
+
+\begin{document}
+
+\title{Paper Title: Capitalize as IEEE Requires}
+
+% Single-blind journal: fill in the real author block before submission.
+\author{Author~Name%
+\thanks{Manuscript received XXX; revised XXX. (Corresponding author:
+Author Name.)}%
+\thanks{The authors are with Affiliation, City, Country
+(e-mail: author@example.org).}}
+
+\maketitle
+
+\begin{abstract}
+One paragraph, no undefined references, no citations in the abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+routing, BGP, memory safety, source address validation
+\end{IEEEkeywords}
+
+\input{sections/1.intro.tex}
+\input{sections/2.bg.tex}
+\input{sections/3.overview.tex}
+\input{sections/4.design.tex}
+\input{sections/5.implementation.tex}
+\input{sections/6.evaluation.tex}
+\input{sections/7.related.tex}
+\input{sections/8.conclusion.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

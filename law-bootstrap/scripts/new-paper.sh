@@ -129,6 +129,7 @@ if [[ "$VENUE" == "nsdi" ]]; then VENUE_DISPLAY="NSDI"; fi
 if [[ "$VENUE" == "sigcomm" ]]; then VENUE_DISPLAY="SIGCOMM"; fi
 if [[ "$VENUE" == "apnet" ]]; then VENUE_DISPLAY="APNet"; fi
 if [[ "$VENUE" == "arxiv" ]]; then VENUE_DISPLAY="arXiv"; fi
+if [[ "$VENUE" == "ton" ]]; then VENUE_DISPLAY="IEEE/ACM ToN"; fi
 
 cat > "$PAPER_DIR/AGENTS.md" << AGENTS_EOF
 # AGENTS.md — $NAME

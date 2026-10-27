@@ -12,7 +12,7 @@ Prepare a paper for resubmission to a new venue. Copies the repo, swaps template
 ### Step 1: Gather parameters
 
 Ask the user for:
-- New venue (`nsdi`, `sigcomm`, `apnet`, `arxiv`)
+- New venue (`nsdi`, `sp` (IEEE S&P), `sigcomm`, `apnet`, `arxiv`)
 - New year
 - New cycle (optional)
 
