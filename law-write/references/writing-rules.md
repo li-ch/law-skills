@@ -200,3 +200,20 @@ cheap"); use negative verbs: fuels, enables, sustains.
 - Good: "We validate our labels against an adjudicated gold gate."
 - Bad: "The unfiltered remainder keeps spoofed attacks cheap."
 - Good: "The unfiltered remainder still fuels spoofed floods."
+
+
+### 26. No numbers or A/An open titles, paragraphs, or sentences
+Section titles, subsection titles, paragraph openings, and sentence
+openings contain no numbers in any form: digits (25), number words
+(One, Two, Twenty five), and the indefinite articles A and An, which
+are number words in disguise (each means "one") and which weaken the
+subject position. Rephrase so the opening carries the real subject.
+law-verify check 8 enforces this mechanically over joined lines.
+- Bad: "\\section{5 Lessons from 25 Years of SAV}"
+- Good: "\\section{Lessons from a Quarter Century of SAV}"
+- Bad: "A filter installed at one source AS protects only against..."
+- Good: "Any filter installed at one source AS protects only against..."
+- Bad: "An adversary controlling one plane can..."
+- Good: "Any adversary controlling one plane can..."
+- Bad: "One unfiltered network is enough."
+- Good: "Any single unfiltered network suffices."

@@ -166,6 +166,43 @@ if [ "$NOTY_ISSUES" -eq 0 ]; then
     check_pass "No X-not-Y contrastive appositions"
 fi
 
+# Check 8: No numbers or A/An open titles, paragraphs, or sentences (rules 24+26)
+echo "--- Check 8: Numbers/A-An opening titles or sentences ---"
+OPENERS_ISSUES=0
+for f in $TEX_FILES; do
+    while IFS=: read -r line_num rest; do
+        [ -z "$line_num" ] && continue
+        OPENERS_ISSUES=$((OPENERS_ISSUES + 1))
+        check_fail "$f:$line_num — sentence/paragraph opens with a number or article A/An, or title contains a number (rules 24+26: rephrase so the real subject opens)"
+    done < <(/usr/bin/python3 - "$f" <<'PYEOF2'
+import re, sys
+lines = open(sys.argv[1], encoding="utf-8").read().split("\n")
+# join wrapped lines; map each char position back to its source line
+norm, start_of = [], []
+for i, l in enumerate(lines, 1):
+    start_of.extend([i] * (len(l) + 1))
+    norm.append(l)
+text = " ".join(norm)
+def line_at(pos):
+    return start_of[pos] if pos < len(start_of) else len(lines)
+hits = set()
+for m in re.finditer(r"(?:^|(?<=[.!?])\s)(?:[0-9]+|One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Twenty(?:[- ]Five)?|Thirty|Fifty|Hundred)\b[ .,:;]", text):
+    hits.add(line_at(m.start()))
+for m in re.finditer(r"(?:^|(?<=[.!?])\s)(A|An) [a-zA-Z\\$]", text):
+    hits.add(line_at(m.start()))
+titles = re.findall(r"\\(?:sub)?section\{[^}]*\}", open(sys.argv[1], encoding="utf-8").read())
+num_title = any(re.search(r"\b(?:[0-9]+|One|Two|Three|Five|Ten|Twenty)\b", t) for t in titles)
+if num_title:
+    hits.add(1)
+for n in sorted(hits):
+    print(f"{n}: opener")
+PYEOF2
+)
+done
+if [ "$OPENERS_ISSUES" -eq 0 ]; then
+    check_pass "No number or A/An openers in titles or sentences"
+fi
+
 echo ""
 echo "=== Results: ${GREEN}$PASS passed${NC}, ${YELLOW}$WARN warnings${NC}, ${RED}$FAIL failed${NC} ==="
 exit $FAIL

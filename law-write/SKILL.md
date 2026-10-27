@@ -5,7 +5,7 @@ description: Write or edit academic paper sections in LaTeX following Li's 23 wr
 
 # LAW Write
 
-Write or edit LaTeX paper sections following Li's Academic Writing conventions. Every output must conform to the 25 writing rules defined in `references/writing-rules.md`.
+Write or edit LaTeX paper sections following Li's Academic Writing conventions. Every output must conform to the 26 writing rules defined in `references/writing-rules.md`.
 
 For the owner' + chr(39) + 's inline % comments in tex sources, run the law-issues
 cycle (capture verbatim into the paper' + chr(39) + 's ISSUES.md, fix, describe,
@@ -33,7 +33,7 @@ Core rules (see `references/writing-rules.md` for full details with examples):
 5. Never hedge — "This exposes a gap" not "This may suggest a gap"
 6. Ground mechanisms in expert behavior: "Operators do X. Our system does Y."
 7. One idea per sentence; no stacked subordinate clauses
-8. No long dashes (`---` or `--`); hyphens in compound words are fine; never begin a sentence with a number (rule 24)
+8. No long dashes (`---` or `--`); hyphens in compound words are fine; never begin a sentence with a number (rule 24), and no number or A/An opens any title, paragraph, or sentence (rule 26)
 9. No `\textbf{}` mid-paragraph (bold numbers are OK); `\noindent\textbf{Label.}` for run-in heads
 10. Code names in `\texttt{}`, system name as `\sys`
 11. `\resizebox` for all tables; `algorithm`/`algpseudocode` only for algorithms
