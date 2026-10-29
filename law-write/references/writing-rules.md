@@ -217,3 +217,12 @@ law-verify check 8 enforces this mechanically over joined lines.
 - Good: "Any adversary controlling one plane can..."
 - Bad: "One unfiltered network is enough."
 - Good: "Any single unfiltered network suffices."
+
+
+## Rules 27-29 (owner-added 2026-10-29, override on conflict)
+
+**27 — Sentence-level coherence.** Adjacent sentences connect by transition, elaboration, contrast, or consequence; abrupt subject changes between neighbors are defects. Rebuild the paragraph around one developing idea rather than bolting on connectives.
+
+**28 — Paragraph depth.** A paragraph is never a single sentence: expand with mechanism, merge, or delete.
+
+**29 — Evidence-scoped claims.** Extraordinary claims require inline evidence or explicit scope: "we could not reproduce any published cross-fabric comparison from its stated inputs (we examined five)" — never "nothing reproduces". This refines rule 5: weak hedging verbs remain forbidden; scoping strong claims to the evidence is required.

@@ -40,6 +40,9 @@ Core rules (see `references/writing-rules.md` for full details with examples):
 12. Leave `\textcolor{red}{##?}` for missing numbers, `\textcolor{red}{TODO:}` for unfinished work
 22. Macro entities act through the authors: "We build a prototype that..." never "A prototype ...s" — only functions/processes/classes/contracts may be active subjects of their own mechanics
 23. Never use "X, not Y" contrastive apposition (nor "not X but Y" / rhetorical "rather than") — state the positive claim; give the contrast its own sentence
+27. Sentence-level coherence: every pair of adjacent sentences must connect — transition, elaboration, contrast, or consequence. Never change subject abruptly between neighboring sentences; rebuild the paragraph's spine so one idea develops in sequence
+28. No one-sentence paragraphs, ever — expand with reasoning, merge with a neighbor, or cut entirely
+29. Scope extraordinary claims: sweeping universals ("nothing reproduces", "no tool survives X") require inline evidence or an explicit scope ("in the systems we examined"); rule 5 forbids weak hedging verbs, never evidence-scoping of strong claims
 
 Section discipline:
 
